@@ -115,7 +115,7 @@ static struct s3c2410fb_display smdk2440_lcd_cfg __initdata = {
 	.width		= 480,	//240,
 	.height		= 272,	//320,
 
-	.pixclock	= 111111,	//166667, /* HCLK 60 MHz, divisor 10 */
+	.pixclock	= 100000,	//166667, /* HCLK 60 MHz, divisor 10 */
 	.xres		= 480,	//240,
 	.yres		= 272,	//320,
 	.bpp		= 16,
@@ -144,7 +144,7 @@ static struct s3c2410fb_mach_info smdk2440_fb_info __initdata = {
 	.gpdup_mask	= 0xffffffff,
 #endif
 
-	.lpcsel		= ((0xCE6) & ~7) | 1<<4,
+//	.lpcsel		= ((0xCE6) & ~7) | 1<<4,
 };
 
 static struct platform_device *smdk2440_devices[] __initdata = {
