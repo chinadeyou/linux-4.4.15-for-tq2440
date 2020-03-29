@@ -119,11 +119,16 @@ static struct mtd_partition smdk_default_nand_part[] = {
 	[1] = {
 		.name	= "deyou_kernel",
 		.offset = SZ_4M,	
-		.size	= 0x00500000,	//5M
+		.size	= SZ_16M,	//16M
 	},
 	[2] = {
+		.name	= "ubifs",
+		.offset = 0x1400000,
+		.size	= SZ_64M,	//64M
+	},
+	[3] = {
 		.name	= "none",
-		.offset = 0x00900000,
+		.offset = 0x5400000,
 		.size	= MTDPART_SIZ_FULL,
 	}
 };

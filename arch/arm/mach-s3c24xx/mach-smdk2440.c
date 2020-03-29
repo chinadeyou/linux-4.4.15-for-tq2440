@@ -115,16 +115,16 @@ static struct s3c2410fb_display smdk2440_lcd_cfg __initdata = {
 	.width		= 480,	//240,
 	.height		= 272,	//320,
 
-	.pixclock	= 100000,	//166667, /* HCLK 60 MHz, divisor 10 */
+	.pixclock	= 100000,	//166667, /* HCLK 100 MHz, divisor 10 */
 	.xres		= 480,	//240,
 	.yres		= 272,	//320,
 	.bpp		= 16,
-	.left_margin	= 2,	//20,
-	.right_margin	= 2,	//8,
-	.hsync_len	= 41,	//4,
-	.upper_margin	= 2,	//8,
-	.lower_margin	= 2,	//7,
-	.vsync_len	= 10,	//4,
+	.left_margin	=  2,	//20,
+	.right_margin	=  2,	//8,
+	.hsync_len		= 41,	//4,
+	.upper_margin	=  2,	//8,
+	.lower_margin	=  2,	//7,
+	.vsync_len		= 10,	//4,
 };
 
 static struct s3c2410fb_mach_info smdk2440_fb_info __initdata = {
